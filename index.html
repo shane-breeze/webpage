@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>shane-breeze-page</title>
+
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/sidenav.css" type="text/css">
+    <link rel="stylesheet" href="styles/profile.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/sidenav.js"></script>
+</head>
+
+<body>
+
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#PhD">PhD</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <div class="card">
+            <img src="images/profile.jpg" alt="Shane" style="width:100%">
+            <h1>Shane Breeze</h1>
+            <p class="title">PhD Student</p>
+            <p>Imperial College London</p>
+            <div style="margin: 24px 0;">
+                <a href="tel:+442075947798"><i class="fa fa-phone"></i></a>
+                <a href="mailto:sdb15@ic.ac.uk"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/shane-breeze"><i class="fa fa-github"></i></a>
+                <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+            </div>
+        <p><button href="#contact">Contact</button></p>
+        </div>
+
+        <!-- <?php include 'scripts/show_images.php';?> -->
+    </div>
+
+    <!--
+    <div id="PhD">
+        <h2>PhD</h2>
+    </div>
+    -->
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <p><a href="tel:+442075947798"><i class="fa fa-phone"></i> (+44)20 759 47798</a></p>
+        <p><a href="mailto:sdb15@ic.ac.uk"><i class="fa fa-envelope"></i> sdb15@ic.ac.uk</a></p>
+        <p><a><i class="fa fa-inbox"></i> Office 512, Blackett Laboratory, Imperial College London, South Kensington Campus, London, SW7 2AZ.</a></p>
+    </div>
+
+</body>
+</html>
