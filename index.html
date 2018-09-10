@@ -2,13 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>shane-breeze-page</title>
 
     <link rel="stylesheet" href="styles/style.css" type="text/css">
     <link rel="stylesheet" href="styles/sidenav.css" type="text/css">
     <link rel="stylesheet" href="styles/profile.css" type="text/css">
+    <link rel="stylesheet" href="styles/collapsible.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="scripts/sidenav.js"></script>
+    <script src="scripts/collapsible.js"></script>
 </head>
 
 <body>
@@ -22,25 +27,53 @@
     <div id="main">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-        <div class="card">
-            <img src="images/profile.jpg" alt="Shane" style="width:100%">
-            <h1>Shane Breeze</h1>
-            <p class="title">PhD Student</p>
-            <p>Imperial College London</p>
-            <div style="margin: 24px 0;">
-                <a href="tel:+442075947798"><i class="fa fa-phone"></i></a>
-                <a href="mailto:sdb15@ic.ac.uk"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/shane-breeze"><i class="fa fa-github"></i></a>
-                <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+        <div class="w3-cell-row" style="width:100%">
+        <div class="w3-container w3-cell" style="width:10%"></div>
+        <div class="w3-container w3-cell" style="width:20%">
+            <div class="w3-card-4" align="center">
+                <img src="images/profile.jpg" alt="Shane" style="width:100%">
+                <h1>Shane Breeze</h1>
+                <p class="title">PhD Student</p>
+                <p>Imperial College London</p>
+                <div style="margin: 24px 0;">
+                    <a href="tel:+442075947798"><i class="fa fa-phone"></i></a>
+                    <a href="mailto:sdb15@ic.ac.uk"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/shane-breeze"><i class="fa fa-github"></i></a>
+                </div>
             </div>
-        <p><button href="#contact">Contact</button></p>
+        </div>
+        <div class="w3-container w3-cell">
+            <div id="collapsible" class="collapsible">
+                <a href="javascript:void(0)" class="closebutton" onclick="closeCollapsible()">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </a>
+                <h2>Research</h2>
+                <p>Lorem ipsum...</p>
+            </div>
+            <a href="javascript:void(0)" class="openbutton" onclick="openCollapsible()">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+        <div class="w3-container w3-cell" style="width:10%"></div>
+
         </div>
 
         <div id="contact">
             <h2>Contact</h2>
+
             <p><a href="tel:+442075947798"><i class="fa fa-phone"></i> (+44)20 759 47798</a></p>
             <p><a href="mailto:sdb15@ic.ac.uk"><i class="fa fa-envelope"></i> sdb15@ic.ac.uk</a></p>
-            <p><a><i class="fa fa-inbox"></i> Office 512, Blackett Laboratory, Imperial College London, South Kensington Campus, London, SW7 2AZ.</a></p>
+            <p><a>
+                <div class="text-container">
+                    <div class="pretext"><i class="fa fa-inbox"></i></div>
+                    <div class="text">Office 512,<br />
+                        Blackett Laboratory,<br />
+                        Imperial College London,<br />
+                        South Kensington Campus,<br />
+                        London, SW7 2AZ.
+                    </div>
+                </div>
+            </a></p>
         </div>
     </div>
 

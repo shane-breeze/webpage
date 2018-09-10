@@ -6,3 +6,14 @@ body {
 .img {
     width: 24vw;
 }
+
+.pretext {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text {
+    width: 300px;
+    display: inline-block;
+}
